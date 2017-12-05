@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint zeroDeskLib.podspec' to ensure this is a
+#  Be sure to run `pod spec lint zerodesk.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,20 +15,20 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "zeroDeskLib"
-  s.version      = "0.0.2"
-  s.summary      = "zeroDeskLib used for sending feedback and crashreport."
+  s.name         = "zerodesk"
+  s.version      = "0.0.1"
+  s.summary      = "zerodesk is used for sending feedback and crash report"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC 
-                    zeroDeskLib used for sending feedback and crashreport of ios app to your specific server 
-                    DESC
+  s.description  = <<-DESC
+                    zerodesk is used for sending feedback and crash report of an iOS app
+                   DESC
 
-  s.homepage     = "https://viren_writso@bitbucket.org/viren_writso/"
+  s.homepage     = "https://github.com/virander/ZeroDeskSS"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,8 +39,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  #s.license      = "MIT"
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Virander" => "virander.kumar@successivesoftwares.com" }
+  s.author             = { "Virander" => "viru.raj248@gmail.com" }
   # Or just: s.author    = ""
   # s.authors            = { "" => "" }
   # s.social_media_url   = "http://twitter.com/"
@@ -65,7 +65,9 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "8.0"
+  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "10.0"
+
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -80,8 +82,9 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://viren_writso@bitbucket.org/viren_writso/ioszerodesk.git", :tag => "#{s.version}" }
+  #s.source       = { :git => "https://github.com/virander/ZeroDeskSS.git", :tag => "#{s.version}" }
 
+  s.source       = { :git => "https://github.com/virander/ZeroDeskSS", :tag => "0.0.1" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -91,8 +94,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.ios.deployment_target = '9.0'
-  s.source_files = 'ioszerodesk/*.{swift,plist}'
+  s.ios.deployment_target = '10.0'
+  s.source_files = 'ZeroDeskiOS/*.{swift,plist}'
 
   # s.public_header_files = "Classes/**/*.h"
 
